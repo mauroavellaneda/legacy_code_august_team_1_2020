@@ -9,23 +9,19 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 
-
 Bundler.require(*Rails.groups)
 
 module Mailboxer
   class Application < Rails::Application
 
-   
-
     config.action_mailer.default_url_options = { host: 'ca-mailboxer.herokuapp.com' }
-
     config.generators do |generate|
       generate.helper false
       generate.assets false
       generate.view_specs false
-      generate.helper_spec false
-      generate.routing_spec false
-      generate.controller_spec false
+      generate.helper_specs false
+      generate.routing_specs false
+      generate.controller_specs false
       generate.test_framework :rspec
     end
   end
