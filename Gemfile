@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.5.1'
+ruby '2.4.3'
 
 gem 'rails', '5.1.5'
 
@@ -19,7 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'capybara'
+  
   gem 'coveralls', require: false
 end
 
