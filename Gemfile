@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.3'
+ruby '2.5.1'
 
 gem 'rails', '5.1.5'
 
@@ -15,6 +15,12 @@ gem 'rake', '~> 11.1', '>= 11.1.2'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'capybara'
+end
 
 group :development do
   gem 'pry-byebug'
